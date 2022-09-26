@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "nav header" 
+        "nav main"
+        "nav footer" ;
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 170px 1fr;
+}
+
+header{
+    grid-area: header;
+    background-color: lightsalmon;
+}
+
+main{
+    grid-area: main;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-area: footer;
+    background-color: yellowgreen;
+}
+
+nav{
+    grid-area: nav;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+}

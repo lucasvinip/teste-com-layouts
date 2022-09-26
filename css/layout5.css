@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+header{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-evenly;
+}
+main{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+li{
+    height: 80px;
+    width: 100px;
+    background-color:aqua;
+    list-style: none;
+    
+}
+
+footer{
+    background-color: purple;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 210px;
+}

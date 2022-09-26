@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 170px 1fr;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "article aside";
+    grid-template-columns: 2fr .5fr;
+}
+
+article{
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    grid-area: footer;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    grid-area: nav;
+    background-color: teal;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    height: 60px;
+    width: 60px;
+    background-color: coral;
+    list-style: none;
+    
+}

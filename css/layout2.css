@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 10% 80% 10%;
+}       
+
+header{
+    grid-area: header;
+    background-color: salmon;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "nav article aside";
+    grid-template-columns: 1fr 3fr 1fr;
+   
+}
+nav{
+    grid-area: nav;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+
+}
+article{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: purple;
+}
